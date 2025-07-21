@@ -23,7 +23,15 @@ print(8 * 99**3)
 # >>> "3" > 3
 # >>> "Hello" == "hello"
 
-print(False, True, False, "Error", False, sep="\n")
+
+def helper():
+    try:
+        "3" > 3
+    except Exception as error:
+        return error
+
+
+print(False, True, False, TypeError, False, sep="\n")
 
 # 4
 #     Create a variable called computer_brand which value is the brand name of your computer.

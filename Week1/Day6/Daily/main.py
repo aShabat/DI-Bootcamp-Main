@@ -13,11 +13,6 @@
 #     Ensure that the characters (keys) are strings.
 #     Ensure that the indices (values) are stored in lists.
 #
-# 3. Expected Output:
-#
-#     For the input “dodo”, the output should be: {"d": [0, 2], "o": [1, 3]}.
-#     For the input “froggy”, the output should be: {"f": [0], "r": [1], "o": [2], "g": [3, 4], "y": [5]}.
-#     For the input “grapes”, the output should be: {"g": [0], "r": [1], "a": [2], "p": [3], "e": [4], "s": [5]}.
 
 word = input("Write a word: ")
 
@@ -29,3 +24,31 @@ for i, c in enumerate(word):
         characters[c] = [i]
 
 print(characters)
+
+# 2
+# 1. Store Data:
+#
+#     You will be provided with a dictionary (items_purchase) where the keys are the item names and the values are their prices (as strings with a dollar sign).
+#     You will also be given a string (wallet) representing the amount of money you have.
+#
+# 2. Data Cleaning:
+#
+# 3. Determining Affordable Items:
+#
+# 4. Sorting and Output:
+#
+#     Sort the list of affordable items in alphabetical order.
+#     If the list is empty (no items can be afforded), return the string “Nothing”.
+#     Otherwise, return the sorted list.
+
+
+def money_to_int(money):
+    if money[0] == "$":
+        return int(money[1:].replace(",", ""))
+    raise Exception("Doesn't start with '$'")
+
+
+def affordable_items(items, wallet):
+    wallet = money_to_int(wallet)
+    items = {key: money_to_int(cost) for (key, cost) in items.items()}
+    return sorted([key for key, cost in items.items() if cost <= wallet])

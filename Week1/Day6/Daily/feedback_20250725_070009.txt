@@ -1,0 +1,12 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week1/Day6/Daily/main.py
+suggestions for improvement:
+- In Challenge 1, adding a check for empty input would enhance robustness.
+- In Challenge 2, the `money_to_int` function could be improved by handling potential exceptions more gracefully (e.g., ValueError if the string cannot be converted to an integer).  A more descriptive error message would also be helpful.
+- The comments in Challenge 2 could be more descriptive, particularly in sections 2 and 3, to clarify what data cleaning and determining affordable items entail.
+- In Challenge 2, consider adding input validation to ensure that `items_purchase` and `wallet` are in the expected format before processing to prevent unexpected errors.
+Brief justification:
+- correctness: Both challenges are correctly implemented. Challenge 1 accurately creates a dictionary mapping characters to their indices as specified. Challenge 2 correctly cleans the input, determines affordable items based on the provided wallet amount, and sorts them alphabetically, handling the 'Nothing' case as required.  This directly addresses all aspects of the problem statements defined in the chapter content.
+- readability: The code is generally well-structured and easy to follow.  However,  Challenge 2's functions could benefit from more detailed docstrings to enhance understandability. The variable names are descriptive.
+- performance: The performance of Challenge 1 is optimal for the task, using efficient data structures and a single iteration.  Challenge 2's performance is acceptable but could be improved by optimizing the string manipulation within the `money_to_int` function.  For very large datasets, this could become significant.
+- security: The primary security concern is in Challenge 2's `money_to_int` function.  While it handles the '$' symbol, it doesn't gracefully handle cases where the input string is not a correctly formatted price.  Improper input could lead to exceptions. Adding more robust error handling would enhance the security and stability of the function.
+

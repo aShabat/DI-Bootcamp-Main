@@ -1,0 +1,11 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week1/Day2/ExercisesXP/main.py
+suggestions for improvement:
+- In exercise 3, instead of printing 'Error',  it would be better to explicitly show the error that occurs when comparing a string and an integer, which is a TypeError. You could print `TypeError` or a more descriptive message indicating the type mismatch.
+- Exercise 8 could be improved by making the joke more dynamic or creative instead of a generic message. Consider adding variations based on the input name.
+- Add comments explaining the purpose of each code section for better readability and maintainability.  Even though the exercises are short, comments would greatly improve comprehension and future updates.
+Brief justification:
+- correctness: The code correctly addresses most exercises, demonstrating a good understanding of print statements, variables, mathematical operations, comparison operators, if statements, and user input. Exercise 3 is slightly incomplete because the type error should be specifically mentioned instead of 'Error'. The rest of the solutions are correct in fulfilling the stated requirements of each exercise.  Therefore, a score of 90% is appropriate, accounting for the minor incompleteness in Exercise 3.
+- readability: The code is generally readable, with clear variable names and straightforward logic. However, adding comments explaining each code section would enhance readability and maintainability. Therefore, a score of 90% is appropriate.
+- performance: The code's performance is efficient for all the tasks presented in the exercises. The algorithms are simple and directly address the problems without any unnecessary computations. A score of 100% is justified.
+- security: There are no apparent security vulnerabilities in the code. The code only deals with user input and doesn't interact with external resources or sensitive data. Hence a score of 100% is justified.
+

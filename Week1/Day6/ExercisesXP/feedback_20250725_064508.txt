@@ -1,0 +1,11 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week1/Day6/ExercisesXP/main.py
+suggestions for improvement:
+- In Exercise 3, the `type_of_clothes` and `international_competitors` should be lists, not sets.  Sets are unordered, and the instructions imply an order is important for some operations (e.g., printing the last competitor).
+- Exercise 3's `major_color` should be a dictionary of dictionaries (nested dictionaries) as specified in the instructions. The current implementation uses sets within a dictionary, which doesn't match the example's structure.
+- Add more comprehensive error handling (e.g., `try-except` blocks) to make the code more robust, especially in the parts where user input is involved (Exercise 2 bonus).
+Brief justification:
+- correctness: The code largely fulfills the requirements of the exercises.  However, Exercise 3 has flaws in data structure usage (sets instead of lists, incorrect nesting in `major_color`), which deviate from the instructions and prevent achieving a perfect score.  Exercise 2 and 1 are fully correct. Exercise 4 is also fully correct.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive, and the logic is clear. The use of dictionary comprehensions improves readability in some places.
+- performance: The performance is good for the tasks at hand. The algorithms are efficient for the given input sizes.  For larger datasets, optimization might be necessary, but that's beyond the scope of these exercises.
+- security: There are no apparent security vulnerabilities in the code. The code doesn't handle external input in a way that creates security risks. In the bonus part of exercise 2, the code is not vulnerable to any malicious input.
+

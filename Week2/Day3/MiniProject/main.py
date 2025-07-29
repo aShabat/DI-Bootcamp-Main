@@ -109,16 +109,20 @@ def check_tie(board):
     return True
 
 
-board = new_board()
-next_player = 1
-display_board(board)
-while True:
-    board = player_input(board, next_player)
+def play():
+    board = new_board()
+    next_player = 1
     display_board(board)
-    if check_win(board, next_player):
-        print(f"Player {'X0'[next_player-1]} won!")
-        break
-    if check_tie(board):
-        print("It's a tie!")
-        break
-    next_player = 3 - next_player
+    while True:
+        board = player_input(board, next_player)
+        display_board(board)
+        if check_win(board, next_player):
+            print(f"Player {'X0'[next_player-1]} won!")
+            break
+        if check_tie(board):
+            print("It's a tie!")
+            break
+        next_player = 3 - next_player
+
+
+play()

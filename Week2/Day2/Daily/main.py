@@ -39,13 +39,19 @@ $a
 #t%"""
 
 
-matrix = [list(line) for line in MATRIX_STR.split("\n")[1:]]
-result = ""
-for col in range(len(matrix[0])):
-    for row in range(len(matrix)):
-        if matrix[row][col] in ascii_letters:
-            result += matrix[row][col]
-        elif len(result) > 0 and result[-1] != " ":
-            result += " "
+def str_to_matrix(input):
+    return input[1:].split("\n")
 
-print(result)
+
+def decode_matrix(matrix):
+    result = ""
+    for col in range(len(matrix[0])):
+        for row in range(len(matrix)):
+            if matrix[row][col] in ascii_letters:
+                result += matrix[row][col]
+            elif len(result) > 0 and result[-1] != " ":
+                result += " "
+    return result
+
+
+print(decode_matrix(str_to_matrix(MATRIX_STR)))

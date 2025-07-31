@@ -6,7 +6,7 @@ print(",".join(words))
 
 # 2
 # Write a function that takes a sentence as input and returns the longest word in the sentence. If there are multiple longest words, return the first one encountered. Characters like apostrophes, commas, and periods should be considered part of the word.
-words = input().split(",")
+words = input().split(" ")
 longest_word = ""
 for word in words:
     if len(word) > len(longest_word):

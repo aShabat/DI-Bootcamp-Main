@@ -1,0 +1,24 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day5/Exercises/cat.py
+suggestions for improvement:
+- The `oldest_cat` function could be made more concise using Python's built-in `max()` function with a custom key.
+- Add docstrings to the `Cat` class and the `oldest_cat` function to improve readability and explain their purpose.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day5/Exercises/dogs.py
+suggestions for improvement:
+- Use more descriptive variable names.  Instead of `x`, use `jump_height` in the `jump` method.
+- Consider adding error handling (e.g., type checking) to the `__init__` method to ensure that `name` is a string and `height` is a number.
+- The use of `randint` for dog heights is fine for this exercise, but in a more robust application, you might want to allow the user to specify the height or use a more realistic distribution for the heights.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day5/Exercises/song.py
+suggestions for improvement:
+- The code is well-structured and easy to understand.  Consider adding docstrings to the class and methods for better documentation.
+- While the performance is excellent for this small example, for very large lyric lists, consider using `print(*self.lyrics, sep='\n')` for potentially better performance.  This is a minor optimization though.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day5/Exercises/zoo.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

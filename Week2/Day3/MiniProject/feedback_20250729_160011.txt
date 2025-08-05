@@ -1,0 +1,14 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day3/MiniProject/main.py
+suggestions for improvement:
+- Improve input validation: The `player_input` function could benefit from more robust input validation to handle non-numeric input more gracefully.  Consider using a `while` loop and error handling to ensure the user provides valid row and column numbers.
+- Enhance error messages: The error messages could be more informative and user-friendly. For instance, instead of just "Impossible turn." or "Incorrect input", provide specific reasons why the input is invalid (e.g., "Row number must be between 1 and 3").
+- Add a game start message: Add a message at the beginning of the game explaining the rules and how to play.
+- Consider using more descriptive variable names: Variable names like `board` are clear. However,  `next_player` could be made clearer (e.g., `current_player`).
+- Improve board representation:  While functional, using 0, 1, 2 might be less readable than ' ', 'X', 'O' in the board representation itself.
+- Separate input and validation: The `player_input` function handles both getting input and validating it. Separating these concerns into distinct functions would improve code organization and readability.
+Brief justification:
+- correctness: The code implements the core functionality of a Tic-Tac-Toe game as described in the chapter: representing the board, displaying it, getting player input, checking for wins and ties, and managing game flow with a `while` loop. It correctly handles the win conditions, including diagonals. However, there's minor room for improvement in input validation and error handling, hence the 95% score.  The use of 1 and 2 to represent players instead of 'X' and 'O' directly in the board is a minor deviation.
+- readability: The code is relatively readable. Function names are descriptive, and the code is generally well-structured.  However, some improvements in variable naming and error handling would enhance readability.  Using 0, 1, 2 for board representation within `display_board` needs improvement for clarity.  The input validation could be simplified.
+- performance: The performance is quite good for this small-scale game.  The algorithms for checking wins and ties are efficient.  No major performance bottlenecks are apparent.  The `check_win` function could be made slightly more concise if needed for very large boards, but it is not a significant performance issue for 3x3.
+- security: The code is relatively secure for this context. The main security concern would be handling malicious input, which is partially addressed but could be improved with more robust input validation. The use of `try...except` prevents crashes from invalid input but does not provide a good user experience.
+

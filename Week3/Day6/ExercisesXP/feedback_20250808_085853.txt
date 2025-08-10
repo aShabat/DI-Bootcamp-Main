@@ -1,0 +1,15 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day6/ExercisesXP/my_json.py
+suggestions for improvement:
+- Use a `with` statement to manage file I/O, ensuring the file is always closed, even if errors occur.
+- Add more robust error handling.  The code assumes the JSON is perfectly formatted and the keys exist. Consider `try-except` blocks to handle potential `KeyError` exceptions.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day6/ExercisesXP/sentence.py
+suggestions for improvement:
+- The code lacks error handling for the case where the `words.txt` file is not found or cannot be read.  A `try-except` block should be added around the `open()` call in `get_words_from_file`. 
+- The input validation in `main` could be improved by using a `while` loop to repeatedly prompt the user for input until valid input is provided. This would make the user experience much smoother.
+- The `get_words_from_file` function reads the entire file into memory at once. For very large files, this could be inefficient. Consider using a generator or iterating through the file line by line to improve memory usage.
+- The security score is lowered due to the lack of input sanitization.  Maliciously crafted input could potentially lead to unexpected behavior or errors. While the program directly addresses the core prompt requirements, there's room to strengthen security by more robust input handling.
+- The program assumes 'words.txt' will exist in the same directory.  It should either take a file path as an argument or handle file location more robustly.
+Correctness: 80%
+-----

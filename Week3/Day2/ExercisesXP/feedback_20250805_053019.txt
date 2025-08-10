@@ -1,0 +1,27 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day2/ExercisesXP/cats.py
+suggestions for improvement:
+- The code could include docstrings to further enhance readability and explain the purpose of each class and method.
+- Consider adding more descriptive names to variables and classes for better understanding.  For example, `all_cats` could be `my_cats`.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day2/ExercisesXP/dog.py
+suggestions for improvement:
+- The `run_speed` calculation could be made more robust by adding a check for division by zero if age is 0.  This would prevent a `ZeroDivisionError`. 
+- Consider adding docstrings to the class and its methods to improve readability and understanding.
+- The fight method could be improved by handling ties more gracefully, perhaps by returning a message like "The fight was a tie!".
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day2/ExercisesXP/family.py
+suggestions for improvement:
+- In the `check_majority` method, consider adding a more informative message when the person isn't found.
+- Improve the error message in `check_majority` to be more user friendly. For example, 'Sorry, we couldn't find {first_name} in the family.'
+- Add input validation to prevent issues with negative ages or non-string names.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day2/ExercisesXP/pet_dog.py
+suggestions for improvement:
+- The `play` method should handle the case where no other dogs are passed as arguments.  Currently, it will error if `args` is empty. Add a check to handle this case, perhaps returning a message like '<dog_name> plays alone'.
+- The `do_a_trick` method uses `randint` which can technically be less efficient than `randrange` for simple integer selection, though the difference is negligible for this small list.  `randrange(0,len(tricks))` is arguably more readable.
+- Add docstrings to all methods in the `PetDog` class explaining their functionality, parameters, and return values.  This significantly improves readability and understanding.
+Correctness: 90%
+-----

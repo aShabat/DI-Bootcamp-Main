@@ -10,21 +10,24 @@
 //         Be careful, each planet has a certain amount of moons. How should you display them?
 //         Should you still use an array for the planets ? Or an array of objects ?
 
+function PlanetData(name, color) {
+  return { name: name, color: color };
+}
 const planets = [
-  ["Mercury", "white"],
-  ["Venus", "yellow"],
-  ["Earth", "green"],
-  ["Mars", "red"],
-  ["Jupyter", "orange"],
-  ["Saturn", "darkyellow"],
-  ["Uranus", "lightblue"],
-  ["Neptune", "darkblue"],
+  PlanetData("Mercury", "white"),
+  PlanetData("Venus", "yellow"),
+  PlanetData("Earth", "green"),
+  PlanetData("Mars", "red"),
+  PlanetData("Jupyter", "orange"),
+  PlanetData("Saturn", "darkyellow"),
+  PlanetData("Uranus", "lightblue"),
+  PlanetData("Neptune", "darkblue"),
 ];
 
 const section = document.getElementsByTagName("section")[0];
-for (planet_color of planets) {
-  const planet = planet_color[0];
-  const color = planet_color[1];
+for (const planet_data of planets) {
+  const planet = planet_data.name;
+  const color = planet_data.color;
   const div = document.createElement("div");
   div.className = "planet";
   div.style.backgroundColor = color;

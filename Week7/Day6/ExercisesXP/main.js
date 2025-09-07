@@ -38,6 +38,9 @@ function displayNumbersDivisible(divisor = 23) {
   console.log("Sum: " + sum);
 }
 
+displayNumbersDivisible();
+displayNumbersDivisible(91);
+
 // 🌟 Exercise 2 : Shopping List
 // Instructions
 //
@@ -206,7 +209,7 @@ function totalVacationCost() {
       planeRideCost(),
   );
 }
-// totalVacationCost();
+totalVacationCost();
 
 // Instructions
 //

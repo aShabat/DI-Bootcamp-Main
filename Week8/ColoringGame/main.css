@@ -1,0 +1,32 @@
+#color_menu {
+  width: 20%;
+  height: 90vh;
+  float: left;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(70px, 10%);
+  grid-auto-rows: minmax(auto, 15%);
+  gap: 5px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 9px;
+  background: lightgrey;
+}
+
+#clear_button {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+#grid {
+  display: grid;
+  height: 100%;
+}
+
+.color_button {
+  border: 1px solid black;
+}
+
+.cell {
+  border: 1px solid lightgrey;
+}

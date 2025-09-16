@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #ff4f5b;
+  color: white;
+}
+
+#new_task {
+  width: 30%;
+  border: solid 1px;
+  padding: 0;
+  display: inline;
+  background: white;
+}
+
+#new_task > * {
+  border-radius: 0;
+  border: none;
+  margin: 0;
+  background: white;
+  height: 100%;
+}
+
+#tasks {
+  background: white;
+  width: 30%;
+  color: black;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+#clear_tasks {
+  align-self: end;
+}

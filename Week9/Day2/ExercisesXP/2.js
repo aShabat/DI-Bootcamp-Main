@@ -18,5 +18,5 @@ function winBattle() {
 
 const arrowWinBattle = () => true;
 
-let experiencePoints = winBattle() ? 10 : 1;
+let experiencePoints = arrowWinBattle() ? 10 : 1;
 console.log(experiencePoints);

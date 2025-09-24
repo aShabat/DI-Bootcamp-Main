@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  background: lightblue;
+}
+
+#board {
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -155px;
+  border-spacing: 0;
+  background: blue;
+}
+
+td {
+  height: 100px;
+  width: 100px;
+  border: 1px black solid;
+  text-align: center;
+  align-content: center;
+  font-size: 30;
+}
+
+#result {
+  display: none;
+  border: solid;
+  width: 250;
+  height: 100;
+  position: relative;
+  left: 50%;
+  margin-left: -125px;
+  top: 120px;
+  padding: auto;
+  align-content: center;
+  background: lightblue;
+}

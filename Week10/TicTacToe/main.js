@@ -25,18 +25,16 @@ function playerTurn(cell) {
   if (cell.innerHTML !== "") return;
 
   cell.innerHTML = player;
-  if (!checkWinner()) computerTurn();
+  if (!checkWinner()) {
+    // computerTurn(computerRandomTurn());
+    computerTurn(computerSmartTurn());
+  }
 }
 
-function computerTurn() {
-  for (let i = 0; i < 1000; i++) {
-    const id = Math.floor(Math.random() * 9);
-    if (boardData[id] !== "") continue;
-    boardData[id] = computer;
-    document.getElementById(id).innerHTML = computer;
-    checkWinner();
-    return;
-  }
+function computerTurn(id) {
+  boardData[id] = computer;
+  document.getElementById(id).innerHTML = computer;
+  checkWinner();
 }
 
 const winningLines = [
@@ -50,22 +48,52 @@ const winningLines = [
   [2, 4, 6],
 ];
 
+function randomArrayElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+function computerRandomTurn() {
+  return randomArrayElement(
+    Array.from(Array(9).keys()).filter((i) => boardData[i] === ""),
+  );
+}
+
+function computerSmartTurn() {
+  const [winningTurn, blockingTurn, randomTurn] = [[], [], []];
+  winningLines.forEach((line) => {
+    const emptyCells = line.filter((i) => boardData[i] === "");
+    const playerCells = line.filter((i) => boardData[i] === player);
+    const computerCells = line.filter((i) => boardData[i] === computer);
+
+    if (emptyCells.length === 1 && computerCells.length === 2)
+      winningTurn.push(...emptyCells);
+    if (emptyCells.length === 1 && playerCells.length === 2)
+      blockingTurn.push(...emptyCells);
+    if (emptyCells.length === 2 && computerCells.length === 1)
+      randomTurn.push(...emptyCells);
+  });
+
+  if (winningTurn.length > 0) return randomArrayElement(winningTurn);
+  if (blockingTurn.length > 0) return randomArrayElement(blockingTurn);
+  if (randomTurn.length > 0) return randomArrayElement(randomTurn);
+  return computerRandomTurn();
+}
+
 function checkWinner() {
   let winner = "";
-  if (boardData.every((c) => c !== "")) winner = "Nobody";
-  else
-    for (const line of winningLines) {
-      const lineCells = boardData.filter((_, i) => line.includes(i));
-      if (lineCells.every((c) => c === player)) {
-        winner = "You";
-        break;
-      }
-      if (lineCells.every((c) => c === computer)) {
-        winner = "Computer";
-        break;
-      }
+  for (const line of winningLines) {
+    const lineCells = boardData.filter((_, i) => line.includes(i));
+    if (lineCells.every((c) => c === player)) {
+      winner = "You";
+      break;
     }
+    if (lineCells.every((c) => c === computer)) {
+      winner = "Computer";
+      break;
+    }
+  }
 
+  if (winner === "" && boardData.every((c) => c !== "")) winner = "Nobody";
   if (winner !== "") {
     result.style.setProperty("display", "block");
 

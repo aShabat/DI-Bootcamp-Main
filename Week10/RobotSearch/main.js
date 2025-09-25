@@ -96,6 +96,7 @@ function robotIcon(robot) {
   email.innerHTML = robot.email;
 
   const div = document.createElement("div");
+  div.className = "robot";
   div.appendChild(image);
   div.appendChild(name);
   div.appendChild(email);

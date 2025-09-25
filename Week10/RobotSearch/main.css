@@ -5,3 +5,13 @@
 #search {
   display: inline;
 }
+
+#robots {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.robot {
+  border: 1px solid black;
+  margin: 5px;
+}

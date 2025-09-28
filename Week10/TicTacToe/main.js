@@ -49,7 +49,9 @@ const winningLines = [
 ];
 
 function randomArrayElement(array) {
-  return array[Math.floor(Math.random() * array.length)];
+  const set = new Set(array);
+  const uniqueArray = [...set];
+  return uniqueArray[Math.floor(Math.random() * uniqueArray.length)];
 }
 
 function computerRandomTurn() {

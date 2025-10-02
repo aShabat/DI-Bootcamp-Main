@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
       if (response.ok) return response.json();
       else throw `Status: ${response.status}`;
     })
-    .then((data) => addGif(data.data.url))
+    .then((data) => addGif(data.data.images.original.url))
     .catch((e) => console.log(e));
 });
 
@@ -46,3 +46,9 @@ function addGif(url) {
   }
   gifCount++;
 }
+
+deleteAllButton.addEventListener("click", () => {
+  gifCount = 0;
+  gifsDiv.innerHTML = "";
+  deleteAllButton.style.setProperty("display", "none");
+});

@@ -70,3 +70,25 @@ async function fetchAsync(url) {
   const data = await response.json();
   console.log(data.result);
 }
+
+// 🌟 Exercise 4: Analyze
+// Instructions
+//
+// Analyse the code provided below - what will be the outcome?
+//
+function resolveAfter2Seconds() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved");
+    }, 2000);
+  });
+}
+
+async function asyncCall() {
+  console.log("calling");
+  let result = await resolveAfter2Seconds();
+  console.log(result);
+}
+
+asyncCall();
+// the function will print 'calling' to the console, wait 2 seconds then print 'resolved'. Waiting will occur during line with 'await'

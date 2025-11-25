@@ -1,0 +1,11 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day2/Daily/main.py
+suggestions for improvement:
+- The code correctly transforms the string into a 2D list and iterates through columns.  However, it skips the empty lines in the input string and doesn't handle cases with multiple consecutive non-alpha characters perfectly.  It also directly prints the result instead of assigning it to a variable called `decoded_message` as instructed.
+- Add comments to explain the purpose of each section of code, making it even clearer.
+- Consider using more descriptive variable names (e.g., `decoded_message` instead of `result`).
+Brief justification:
+- correctness: The code largely follows the instructions. It successfully converts the matrix string into a 2D list, iterates through columns, filters alpha characters, and attempts to replace non-alpha characters with spaces. However, it has a small flaw in its space replacement logic, leading to an imperfect solution. The output is close to the expected message but not quite correct due to the handling of consecutive non-alpha characters.  The instructions specifically mention constructing the decoded message and assigning it to a variable named `decoded_message` before printing, which this code doesn't fully adhere to.
+- readability: The code is well-structured and uses clear variable names (although they could be more descriptive). The use of list comprehension for creating the matrix is concise and readable.  Comments could further improve readability. 
+- performance: The code's performance is efficient for the given input size. It uses nested loops, which is a reasonable approach for this task, and doesn't involve any computationally expensive operations.
+- security: The code doesn't involve any security concerns as it's simply processing a string and doesn't interact with external resources or handle user input.
+

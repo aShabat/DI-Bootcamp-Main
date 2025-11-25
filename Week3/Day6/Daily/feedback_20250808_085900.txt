@@ -1,0 +1,14 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day6/Daily/text.py
+suggestions for improvement:
+- The `word_frequency` method always returns the total number of words because the inner loop's condition `if word == word` is always true.  It should compare the input `word` with each word in the list.
+- The `most_common_word` method has a minor inefficiency. It iterates through the dictionary twice. It could be optimized by finding the max value during the first iteration.
+- The code is missing the `TextModification` class and its methods (`remove_punctuation`, `remove_stop_words`, `remove_special_characters`).
+- Error handling is missing. The `from_file` method should include error handling for file not found exceptions.
+- The `__text` attribute should not be a private attribute unless there is a specific reason to prevent direct access (There is no need for a private attribute here).
+- The code doesn't handle cases where the input file is empty or contains only whitespace in `from_file()`.
+Brief justification:
+- correctness: The `Text` class implements the `word_frequency`, `most_common_word`, and `unique_words` methods as specified. However, `word_frequency` has a critical bug (always returns total word count). The `from_file` class method is partially implemented (missing error handling). The bonus part (TextModification class) is entirely missing, resulting in a lower correctness score.  The code does address the core functionality described in the chapter content but has significant omissions and errors.
+- readability: The code is reasonably well-structured and easy to follow.  Variable names are mostly descriptive. However, improving the `word_frequency` and `most_common_word` methods would enhance readability.
+- performance: The `most_common_word` method could be optimized for better performance. The use of sets in `unique_words` is efficient. The current performance is acceptable for small texts but could be slow for large files.
+- security: The code doesn't have any obvious security vulnerabilities.  The only potential issue is the `from_file` method's lack of error handling which could lead to exceptions if the file doesn't exist, but this is a functionality issue rather than a security flaw.  Including proper exception handling would improve security by preventing crashes.
+

@@ -1,0 +1,23 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/App.jsx
+suggestions for improvement:
+- The code only imports and renders the QuoteGenerator component, without providing any implementation details or code related to generating random quotes, changing background colors, or handling events as described in the instructions. The instructions explicitly require building a Random Quote Generator with specific features.
+- The provided code does not address the core functionality of the mini-project: generating and displaying random quotes, handling button clicks to update the quote, and changing background/text colors. The instructions also emphasize avoiding displaying the same quote twice, which is not handled at all by this component alone.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/QuoteGenerator.jsx
+suggestions for improvement:
+- Consider using more descriptive variable names (e.g., `setQuoteIndex` instead of `SetQuoteIndex`).
+- The component could be further broken down into smaller, more manageable pieces for increased readability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/main.jsx
+suggestions for improvement:
+- The provided code is the entry point for a React application, but it does not implement the Random Quote Generator as described in the instructions.
+- The `App` component (imported from './App.jsx') would need to contain the logic for fetching quotes, managing state, handling button clicks, and updating the UI.
+Correctness: 0%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/quotes.js
+suggestions for improvement:
+- The provided code only contains the array of quotes. It needs the React code to display the quotes, the author, the button and the functionality to change the background color.
+Correctness: 0%
+-----

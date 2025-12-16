@@ -1,0 +1,5 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week21/Day2/ExercisesXP/main.ts
+suggestions for improvement:
+- Exercise 7 was skipped, resulting in a small deduction in correctness.
+Correctness: 90%
+-----

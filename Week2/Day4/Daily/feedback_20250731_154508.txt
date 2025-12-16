@@ -1,0 +1,11 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week2/Day4/Daily/main.py
+suggestions for improvement:
+- Challenge 1 is perfectly solved.  Challenge 2 has a flaw: it splits the input sentence by commas, but the instructions specify a sentence (space-separated words), not a comma-separated list.  It should split by spaces instead.
+- Add docstrings to both code sections to explain the function of each part and improve readability.
+- For Challenge 2, consider handling edge cases such as empty sentences.
+Brief justification:
+- correctness: The code for Challenge 1 directly addresses the prompt's requirements by taking comma-separated input, sorting it, and outputting the sorted list in the specified format. This aligns perfectly with the chapter's focus on string manipulation, lists, and sorting. Challenge 2's correctness is reduced because it uses incorrect splitting, making its output inconsistent with the intended problem.  While the logic of finding the longest word is correct in its current implementation (given the comma separation), it does not solve the problem as stated in the prompt.
+- readability: The code is concise and relatively easy to understand.  However, adding docstrings would significantly improve readability and make the code's purpose clearer.
+- performance: The sorting algorithm used in Challenge 1 (Python's built-in `sort()`) is efficient. The loop in Challenge 2 for finding the longest word has a linear time complexity (O(n)), which is optimal for this problem. The performance is good for the task's input size.
+- security: There are no apparent security vulnerabilities in the provided code.  The code only performs string manipulation and doesn't interact with external resources or user inputs in a way that could introduce security risks.
+

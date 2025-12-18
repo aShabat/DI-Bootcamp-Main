@@ -1,0 +1,9 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week21/Day4/Daily/main.ts
+suggestions for improvement:
+- The `Library` class's `books` property should be initialized in the constructor.
+- The `DigitalLibrary` class's `website` property should be initialized in the constructor.
+- Consider using a more descriptive return type for `getBookDetails` (e.g., `Book | string`) instead of relying on string concatenation and returning 'Book Not Found' as a string.  This could be improved by returning a `Book` object or `undefined`.
+- The `addBook` method in the Library class should probably also accept an ISBN to prevent adding duplicate books.
+- The `DigitalLibrary` should call the super constructor when it is instantiated.
+Correctness: 70%
+-----

@@ -1,0 +1,11 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/QuoteGenerator.jsx
+suggestions for improvement:
+- Consider using a more descriptive name for the `quotes.js` file to clearly indicate its purpose (e.g., `quoteData.js` or `quotesList.js`).
+- While the code works, consider using a CSS file for styling to improve maintainability and separation of concerns.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week17/quote-generator/src/quotes.js
+suggestions for improvement:
+- The provided code is just a data file containing a list of quotes and authors. It does not implement any React components, state management, event handling, or dynamic styling as described in the instructions. Therefore, it does not address the core requirements of the project.
+Correctness: 0%
+-----

@@ -1,0 +1,17 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week4/Exercises/anagram/anagram_checker.py
+suggestions for improvement:
+- The `anagrams.py` file is missing, which contains the UI functionality as specified in the instructions.  The code only provides the `AnagramChecker` class.
+- Error handling is minimal. The `__init__` method, for example, doesn't handle potential `FileNotFoundError` exceptions.
+- The performance could be significantly improved by using more efficient data structures (like a Trie) for word storage and lookup, particularly for `get_anagrams`.
+- The `__is_anagram` method unnecessarily checks if the words are equal before comparing letter counts; this could be removed for clarity and efficiency. 
+- The `get_anagrams` method is case sensitive due to comparing `w` with `word`, while the requirement is case-insensitive. Consider applying `.lower()` to both before comparison.
+Correctness: 80%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week4/Exercises/anagram/anagrams.py
+suggestions for improvement:
+- The `anagram_checker.py` file is missing, making it impossible to assess the correctness of the `AnagramChecker` class implementation. The provided code only shows the user interface part.
+- Error handling could be improved.  Instead of simply printing an error message and continuing, the program could provide more specific guidance to the user (e.g., explaining what kind of input is expected).
+- The performance could be improved by using more efficient algorithms for anagram detection, especially for longer words. Consider using optimized data structures like sets for faster comparisons.
+- Add more comprehensive input validation in `anagrams.py`.  Check for empty strings explicitly before checking for alphabetic characters to avoid potential errors.
+Correctness: 95%
+-----

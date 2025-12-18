@@ -1,0 +1,34 @@
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/currencies.py
+suggestions for improvement:
+- The `__iadd__` method should update the `self.amount` directly instead of creating a new Currency object.  This is more efficient and aligns better with the in-place addition expectation.
+- The `__str__` method could be improved for better handling of singular vs. plural forms.  Consider using a more robust approach (e.g., using an external library or writing a more sophisticated conditional).
+Correctness: 95%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/date.py
+suggestions for improvement:
+- Exercise 5: The calculation for time until January 1st is slightly flawed. It only calculates the difference in days, not the remaining time including hours, minutes, and seconds.  Consider using `datetime.datetime` instead of `datetime.date` to capture the complete time information and calculate the total seconds more precisely.
+- Exercise 6: The `birthdate_func` is good, but consider adding input validation to handle incorrect date formats or other potential errors.  Adding a `try-except` block would improve robustness.
+Correctness: 80%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/fake.py
+suggestions for improvement:
+- The code could be slightly improved by making the `global_faker` variable local to the `add_users` function.  This would enhance encapsulation and avoid potential unintended side effects if the `faker` instance were to be modified elsewhere in a larger program.
+- Consider adding error handling.  While unlikely with `faker`,  robust code should account for potential exceptions during data generation.
+Correctness: 100%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week3/Day4/ExercisesXP/s.py
+suggestions for improvement:
+- The code could be slightly improved by using a list comprehension for a more concise generation of the random string.  This would make it slightly more readable and potentially more performant for larger string lengths.
+- Adding a docstring to explain the function's purpose would enhance readability.
+Correctness: 100%
+-----

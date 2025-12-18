@@ -1,0 +1,7 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week21/Day4/ExercisesXP/main.ts
+suggestions for improvement:
+- In Exercise 1, the `Employee` class has a typo: `consturctor` should be `constructor`. Also, the `salary` property should be of type `number`, not `string`. You also need to implement the getEmployeeInfo method.
+- In Exercise 3, initialize the `name` property of the `Animal` class, either in the constructor or directly.
+- It is good to include all the asked functionality, even if the compiler shows an error as asked in instructions.
+Correctness: 80%
+-----

@@ -1,0 +1,6 @@
+URL: https://github.com/aShabat/DI-Bootcamp-Main/blob/main/Week7/Day6/Daily/main.js
+suggestions for improvement:
+- Consider using more descriptive variable names (e.g., `planetDiv` instead of `div`).
+- You have fulfilled the bonus by using an array of objects, but there are no moons created.
+Correctness: 80%
+-----
